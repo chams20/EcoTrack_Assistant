@@ -1,0 +1,11 @@
+﻿conteneur_id;zone;type_dechet;remplissage_pct;etat;derniere_mesure
+CTR-CEN-001;Centre;ordures_menageres;96;critique;2026-09-29 08:45
+CTR-CEN-014;Centre;recyclables;72;a_collecter;2026-09-29 08:42
+CTR-NOR-021;Nord;ordures_menageres;41;normal;2026-09-29 08:40
+CTR-NOR-033;Nord;verre;88;a_collecter;2026-09-29 08:38
+CTR-SUD-008;Sud;ordures_menageres;93;critique;2026-09-29 08:36
+CTR-SUD-019;Sud;recyclables;67;normal;2026-09-29 08:33
+CTR-EST-004;Est;ordures_menageres;28;normal;2026-09-29 08:30
+CTR-EST-027;Est;biodéchets;91;critique;2026-09-29 08:27
+CTR-OUE-011;Ouest;ordures_menageres;76;a_collecter;2026-09-29 08:24
+CTR-OUE-025;Ouest;verre;54;normal;2026-09-29 08:20

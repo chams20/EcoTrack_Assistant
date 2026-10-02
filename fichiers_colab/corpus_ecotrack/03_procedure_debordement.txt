@@ -1,0 +1,7 @@
+ECOTRACK - Procédure en cas de débordement
+
+Un citoyen qui constate un conteneur plein ou débordant utilise l'application EcoTrack, ouvre la carte, sélectionne le conteneur puis choisit « Signaler un problème ». Le type « Conteneur plein » doit être sélectionné. Une photo et un commentaire peuvent être ajoutés.
+
+Le signalement est enregistré avec la date, l'heure et la position. Un doublon transmis moins d'une heure après un signalement existant peut être regroupé avec le premier. Le gestionnaire de zone reçoit une notification.
+
+Si le niveau mesuré dépasse 90 %, ou si plusieurs signalements concordants sont reçus, le gestionnaire peut déclencher une collecte d'urgence. Il est interdit de déposer les sacs au sol. En cas de danger immédiat, d'incendie ou de produit suspect, l'usager doit contacter les services d'urgence et ne pas manipuler le contenu.

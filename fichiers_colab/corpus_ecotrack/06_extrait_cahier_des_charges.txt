@@ -1,0 +1,9 @@
+ECOTRACK - Extrait du cahier des charges
+
+Les objectifs stratégiques sont de réduire de 20 % la distance des tournées, de maintenir le taux de débordement sous 2 %, de réduire de 15 % les coûts opérationnels et de viser une disponibilité de la plateforme supérieure à 99,5 %.
+
+Le tableau de bord doit afficher une carte des conteneurs, leur état, les indicateurs clés et les alertes. Les profils principaux sont le citoyen, l'agent de collecte, le gestionnaire et l'administrateur.
+
+La réception des données IoT suit le flux suivant : les capteurs transmettent les mesures au broker MQTT, les données sont traitées par la plateforme puis stockées. La fréquence indicative est d'une mesure toutes les quinze minutes ou lors d'un changement significatif.
+
+Les actions sensibles doivent être tracées. L'accès des gestionnaires et administrateurs peut utiliser une authentification renforcée.

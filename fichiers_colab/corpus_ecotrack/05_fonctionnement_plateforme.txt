@@ -1,0 +1,7 @@
+ECOTRACK - Fonctionnement de la plateforme
+
+EcoTrack est une plateforme intelligente de gestion des déchets urbains. Elle s'appuie sur des conteneurs équipés de capteurs de remplissage, une transmission de données IoT et des tableaux de bord destinés aux gestionnaires. Le périmètre initial comprend 2 000 conteneurs répartis sur 12 secteurs géographiques.
+
+Les capteurs mesurent le niveau de remplissage et transmettent périodiquement un identifiant de conteneur, un taux de remplissage, une température et un horodatage. Les mesures sont utilisées pour visualiser l'état du parc et préparer les tournées.
+
+Les citoyens peuvent consulter les horaires, signaler un problème et suivre certains indicateurs. Les agents reçoivent une tournée et valident les collectes. Les gestionnaires supervisent les alertes, les conteneurs critiques et les statistiques par zone.

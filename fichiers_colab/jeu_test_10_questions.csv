@@ -1,0 +1,11 @@
+﻿id;question;reponse_attendue;document_attendu
+Q01;À partir de quel niveau un conteneur est-il critique ?;90 % de remplissage.;01_reglement_collecte.txt
+Q02;Où déposer les bouteilles en verre ?;Dans le conteneur vert.;02_faq_tri.txt
+Q03;Que doit faire un citoyen face à un conteneur débordant ?;Le signaler dans l’application via la carte et « Signaler un problème ».;03_procedure_debordement.txt
+Q04;Quand les recyclables sont-ils collectés en zone Nord ?;Le jeudi.;04_horaires_zones.txt
+Q05;Combien de conteneurs comprend le périmètre initial ?;2 000 conteneurs.;05_fonctionnement_plateforme.txt
+Q06;Quel objectif vise la réduction de distance des tournées ?;Une réduction de 20 %.;06_extrait_cahier_des_charges.txt
+Q07;Que faire des piles usagées ?;Les rapporter à un point spécialisé ou en déchèterie.;02_faq_tri.txt
+Q08;À quelle fréquence indicative les capteurs transmettent-ils ?;Toutes les quinze minutes ou lors d’un changement significatif.;06_extrait_cahier_des_charges.txt
+Q09;L’assistant peut-il répondre à partir de ses connaissances générales ?;Non, il doit se limiter au corpus autorisé et refuser si l’information manque.;07_securite_et_confidentialite.txt
+Q10;Quels profils utilisent EcoTrack ?;Citoyen, agent de collecte, gestionnaire et administrateur.;06_extrait_cahier_des_charges.txt

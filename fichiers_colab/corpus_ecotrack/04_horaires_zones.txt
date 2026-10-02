@@ -1,0 +1,9 @@
+ECOTRACK - Horaires indicatifs par zone
+
+Zone Centre : collecte des ordures ménagères du lundi au samedi entre 06 h 00 et 10 h 00 ; recyclables le mardi et le vendredi.
+Zone Nord : ordures ménagères le lundi, mercredi et vendredi entre 07 h 00 et 11 h 00 ; recyclables le jeudi.
+Zone Sud : ordures ménagères le mardi, jeudi et samedi entre 06 h 30 et 10 h 30 ; recyclables le mercredi.
+Zone Est : ordures ménagères le lundi, mercredi et samedi entre 07 h 30 et 11 h 30 ; recyclables le vendredi.
+Zone Ouest : ordures ménagères le mardi, jeudi et samedi entre 07 h 00 et 11 h 00 ; recyclables le lundi.
+
+Les jours fériés peuvent entraîner un décalage. Seules les informations présentes dans l'application ou les notifications officielles confirment une modification exceptionnelle.
