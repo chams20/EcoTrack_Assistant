@@ -12,7 +12,8 @@ Un assistant qui répond aux questions des citoyens et des gestionnaires **à pa
 
 ```
 ├── EcoTrack_Assistant.ipynb        Notebook complet, exécutable de bout en bout
-├── resultats_test.csv              Résultats du jeu de test (10 questions)
+├── resultats_test.csv              Résultats du jeu de test (10 questions) : recherche et réponses
+├── resultats_test_avec_reflection.csv  Les mêmes résultats, avec les colonnes de la Reflection (bonus B)
 ├── fichiers_colab/                 Corpus et données réellement utilisés (noms d'origine)
 │   ├── corpus_ecotrack/            Les 7 documents EcoTrack
 │   ├── jeu_test_10_questions.csv   Le jeu de test fourni
@@ -31,7 +32,7 @@ Un assistant qui répond aux questions des citoyens et des gestionnaires **à pa
 |---|---|
 | Notebook exécutable de bout en bout | `EcoTrack_Assistant.ipynb` |
 | Corpus réellement utilisé, noms conservés | `fichiers_colab/corpus_ecotrack/` |
-| Résultats du jeu de test | `resultats_test.csv`, et le tableau de l'étape 7 du notebook |
+| Résultats du jeu de test | `resultats_test.csv` (et `resultats_test_avec_reflection.csv` pour le bonus B), et les tableaux de l'étape 7 du notebook |
 | Analyse d'erreur | Étape 8 du notebook |
 | Support de présentation | `presentation/` |
 | Lien vers le dépôt | Ce dépôt |
@@ -44,7 +45,8 @@ Aucune clé API n'apparaît dans le dépôt : elle est lue dans les secrets Cola
 
 1. Ouvrir `EcoTrack_Assistant.ipynb` dans **Google Colab** (*Fichier > Importer le notebook*).
 2. Panneau 🔑 *Secrets* : ajouter un secret nommé `GOOGLE_API_KEY` (une clé Gemini), et activer **Accès au notebook**.
-3. Panneau 📁 *Fichiers* : téléverser **`fichiers_colab.zip`**, et **`cache_gemini.json`** pour retrouver les mêmes réponses sans consommer de quota.
+3. Panneau 📁 *Fichiers* : téléverser **`fichiers_colab.zip`**.
+   *Facultatif* : téléverser aussi **`cache_gemini.json`**. Le notebook réutilise alors les réponses déjà obtenues, ce qui donne les mêmes résultats sans consommer de quota. Sans lui, le notebook redemande toutes les réponses à Gemini (une trentaine d'appels, alors que la clé gratuite est limitée à 20 requêtes par jour et par modèle).
 4. *Exécution > Tout exécuter*.
 
 Versions de référence (préinstallées dans Colab, aucune mise à jour) : numpy 2.1.3 · pandas 2.2.3 · google-genai 2.12.1 · sentence-transformers 5.7.0.
@@ -76,7 +78,7 @@ Question → embedding (MiniLM, 384 nombres) → 3 passages les plus proches (co
 | Réponses correctes | 7 / 10 · Q03 et Q09 : bon document, mais pas le bon passage |
 | Analyse d'erreur (Q05) | **Dilution** : la phrase-réponse seule obtient 0,545, mais noyée dans son passage, 0,359 (rang 5) |
 | Bonus A · Tool Use | ✓ Gemini appelle `etat_conteneurs(zone)` pour l'état d'une zone, et pas pour une question de tri |
-| Bonus B · Reflection | ✓ Mesurée : 7/10 → 6/10. Elle corrige la rédaction, pas la recherche (réserve : changement de modèle en cours de route) |
+| Bonus B · Reflection | ✓ Réalisée : le relecteur valide les 10 réponses sans rien corriger (`resultats_test_avec_reflection.csv`). Elle corrige la rédaction, pas la recherche. Les mesures avant/après ont été faussées par les conditions d'exécution (journal, n° 12 et 16) |
 | Bonus C · Injection documentaire | ✓ Document piégé reçu en 1re position, l'assistant n'obéit pas à l'instruction malveillante |
 
 Les difficultés rencontrées (quotas de l'API Gemini, environnement Colab, données) et leurs corrections sont détaillées dans [`docs/journal_des_difficultes.md`](docs/journal_des_difficultes.md).
